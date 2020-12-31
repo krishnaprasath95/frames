@@ -1,0 +1,41 @@
+#testimonySlide {
+    background: linear-gradient(112deg, rgb(180, 180, 180) 50%, rgb(1, 255, 158) 50%);
+    max-width: 900px;
+    
+}
+.testimony-item{
+    color:rgb(0, 0, 0);
+    
+}
+.testimony-profile {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 2rem;
+    
+}
+
+.carousel-control-prev{
+    justify-content: flex-start;
+}
+
+
+.carousel-control-next{
+   justify-content: flex-end;
+}
+.carousel-control-next,.carousel-control-prev{
+    padding:1.4rem;
+    
+}
+
+
+
+@media screen and (max-width:768px){
+    .testimony-profile{
+        font-size:2rem;
+    }
+    .profile-user{
+        font-size:1rem;
+    }
+}

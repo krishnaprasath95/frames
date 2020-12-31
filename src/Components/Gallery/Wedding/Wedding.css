@@ -1,0 +1,13 @@
+.bannerWed{
+    background-image:url(../../../assets/1h.jpg);
+    height:60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.7;
+}
+.bannerWed h3{
+    color:rgb(18, 34, 34);
+    padding-top: 20vh;
+}
+

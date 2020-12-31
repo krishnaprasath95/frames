@@ -1,0 +1,7 @@
+.babyBanner{
+    background:url('../../../assets/2h.jpg');
+    height:90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
