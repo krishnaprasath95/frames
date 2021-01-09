@@ -1,6 +1,7 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {Container,Row,Col} from 'react-bootstrap'
+
 import {Carousel} from 'react-responsive-carousel';
 import hA from '../../assets/1h.jpg';
 import hB from '../../assets/2h.jpg';
@@ -12,12 +13,10 @@ import Testimony from './Testimony/Testimony';
 import './Home.css';
 
 
-
 const Home = () => {
     
     return (
         <>
-        
         <Carousel autoPlay style={{width:"100%"}}>    
             <div className="homeBanner">
                 <img src={hA} alt=""/>

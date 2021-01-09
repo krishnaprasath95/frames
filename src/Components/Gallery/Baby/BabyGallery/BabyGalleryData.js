@@ -10,4 +10,4 @@ export const BabyPics = [
     {
         photo:BBP2,
     }
-]
+];

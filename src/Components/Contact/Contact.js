@@ -3,6 +3,8 @@ import {Container,Row,Col} from 'react-bootstrap';
 import {FaMapMarkerAlt,FaPhoneSquareAlt} from 'react-icons/fa';
 import {AiFillMail} from 'react-icons/ai'
 import './Contact.css';
+
+
 const Contact = () => {
     return (
         <>

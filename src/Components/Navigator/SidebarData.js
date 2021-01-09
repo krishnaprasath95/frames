@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaHome,FaInfoCircle,FaImages,FaImage,FaPhoneAlt,FaCaretUp,FaCaretDown} from 'react-icons/fa';
+import {FaHome,FaInfoCircle,FaImages,FaFilm,FaImage,FaPhoneAlt,FaCaretUp,FaCaretDown} from 'react-icons/fa';
 export const SidebarData =[
     {
         title:'Home',
@@ -32,15 +32,27 @@ export const SidebarData =[
                 title:'Baby',
                 path:'/baby',
                 icon:<FaImage/>
+            },
+            {
+                title:'Maternity',
+                path:'/maternity',
+                icon:<FaImage/>
             }
         ]
     },
     
+    {
+        title:'Wedding Film',
+        path:'/weddingfilm',
+        icon:<FaFilm/>,
+        iconClosed:<FaCaretDown/>,
+        iconOpened:<FaCaretUp/>
+    },
     {
         title:'Contact Us',
         path:'/contact',
         icon:<FaPhoneAlt/>,
         iconClosed:<FaCaretDown/>,
         iconOpened:<FaCaretUp/>
-    },
+    }
 ]

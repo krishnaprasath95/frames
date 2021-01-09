@@ -1,0 +1,66 @@
+.video-wedding{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.video-wedding img{
+    vertical-align: middle;
+   width:100%;
+   transition: transform 0.5s;
+  
+}
+.video-wedding img:hover{
+    transform: scale(1.2);
+}
+.video-wedding .video-info{
+    position:absolute;
+    bottom:0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width:100%;
+    line-height: 5px;
+     
+}
+.modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+  
+}
+
+.modal-content{
+    background: rgba( 17, 17, 17, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;;
+    color:rgb(202, 203, 204);
+}
+
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+.close{
+    color:#fff;
+}
+.videoFrame{
+    position: relative;
+    width:100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+.videoFrame iframe{
+    position: absolute;
+    top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border:1px solid rgb(5, 5, 5);
+
+}

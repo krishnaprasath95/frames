@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import ReactBnbGallery from 'react-bnb-gallery';
+
 import {WedGalleryPics} from './WedGalleryData';
 import 'react-bnb-gallery/dist/style.css';
 import './WedGallery.css';

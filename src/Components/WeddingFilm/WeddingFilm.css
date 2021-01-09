@@ -1,0 +1,48 @@
+.filmBanner{
+    position: relative;
+    padding:0;
+    margin: 0;
+    width:100%;
+    height:90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.filmBg{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgb(110, 162, 240);
+    clip-path: ellipse(40% 40% at center  50%);
+    z-index:-2;
+}
+
+.film-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+}
+.filmLottie{
+    display: flex;
+    justify-content: center;
+    width:50%;
+}
+.filmLottie #lottie{
+    width:100%;
+}
+@media only screen and (max-width:768px){
+    .filmBanner{
+        height:50vh;
+        flex-direction:column-reverse;       
+    }
+    .film-title{padding-top:0 ;}
+}
+@media screen and (orientation:landscape){
+    .filmBanner{
+        height:90vh;
+    }
+}

@@ -3,11 +3,15 @@ import {Jumbotron} from 'react-bootstrap';
 import Wed from './Wed/Wed';
 import PreWed from './PreWed/PreWed';
 import Bride from './Bride/Bride';
-
+import SimpleReactLightbox from 'simple-react-lightbox';
 import './Wedding.css';
+
+
+
 const Wedding = () => {
     return (
         <>
+        <SimpleReactLightbox>
         <div className="bannerWed text-center">
              <h3>Wedding Photograpy</h3>
         </div>
@@ -29,6 +33,7 @@ const Wedding = () => {
             <h3 className="mt-3">Bridal photography</h3>
         <Bride/>
         </section>
+        </SimpleReactLightbox>
         </>
     )
 }

@@ -2,10 +2,10 @@ import React from 'react';
 import {Jumbotron} from 'react-bootstrap';
 import {SRLWrapper} from 'simple-react-lightbox';
 import SimpleReactLightbox from 'simple-react-lightbox';
-import {BabyData} from './BabyData';
-import BabyGallery from './BabyGallery/BabyGallery';
+import {MaternityData} from './MaternityData';
+import MaternityGallery from './MaternityGallery/MaternityGallery';
 import JustifiedGrid from 'react-justified-grid';
-import './Baby.css';
+import './Maternity.css';
 
 const options ={
     buttons:{
@@ -13,12 +13,12 @@ const options ={
     }
 }
 
-const Baby = () => {
+const Maternity = () => {
     return (
         <>
         <SimpleReactLightbox>
-        <div className="babyBanner text-center">
-            <h2 className="pt-2">Baby Photography</h2>
+        <div className="maternityBanner text-center">
+            <h2 className="pt-2">Maternity Photography</h2>
         </div>
 
         <div className="mt-5 mb-4 text-center">
@@ -28,21 +28,21 @@ const Baby = () => {
         </Jumbotron>
         </div>
         <div className="mt-5 mb-4">
-            <SRLWrapper option={options}>
+            <SRLWrapper options={options}>
         <JustifiedGrid 
             gutter={5}
-            images={BabyData}
+            images={MaternityData}
             maxRowHeight={200}
             rows={undefined}    
         />
         </SRLWrapper>
         </div>
         <div className="text-center mt-4">
-        <BabyGallery/>
+        <MaternityGallery/>
         </div>
         </SimpleReactLightbox>
         </>
     )
 }
 
-export default Baby;
+export default Maternity;

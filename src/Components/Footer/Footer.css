@@ -1,0 +1,13 @@
+.mainFooter{
+    margin-bottom:0;
+    padding-top: 5px;
+    background-color: rgb(31, 30, 30);
+    overflow-x: hidden;
+}
+.mainFooter a{
+    text-decoration: none;
+    color:blanchedalmond
+}
+.mainFooter a:hover{
+    color:cadetblue;
+}
