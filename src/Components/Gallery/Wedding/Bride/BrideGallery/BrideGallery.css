@@ -1,0 +1,59 @@
+.slideUpperBtn {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid hsl(243, 80%, 62%);
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpperBtn span {
+    display: inline-block;
+    transition: inherit;
+    color: hsl(243, 80%, 62%);
+}
+
+.slideUpperBtn:hover span {
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+.slideUpperBtn::before {
+    content: "";
+    background-color: hsl(243, 80%, 62%);;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: inherit;
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpperBtn::after {
+    content: 'Explore More';
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: inherit;
+    transform: translateY(100%);
+    width: 100%;
+
+}
+
+.slideUpperBtn:hover::before {
+    transform: translateY(0) scale(3);
+    transition-delay: .025s;
+}
+
+.slideUpperBtn:hover::after {
+    opacity: 1;
+    color: hsl(222, 100%, 95%);
+    transform: translateY(0);
+}

@@ -8,6 +8,22 @@
 .homeContent{
     text-align:center;
 }
+.homeContent::before{
+    content:"";
+    display: block;
+    height:2px;
+    background:rgb(90, 90, 90);
+    margin:5% 2%;
+    position: relative;
+}
+.homeContent::after{
+    content:"";
+    display: block;
+    height:2px;
+    background:rgb(90, 90, 90);
+    margin:5% 2%;
+    position: relative;
+}
 .homeFixedbanner{
     background: url('../../assets/1h.jpg') no-repeat center center fixed;
     display:table;
@@ -16,9 +32,36 @@
     width:100%;
     background-size:cover;
 }
+.wedFilm{
+    position: relative;;
+    width:100%;
+    height: 60vh;
+}
+.wedFilm iframe{
+    border:4px solid rgb(95, 215, 231);
+    border-radius: 1% 1%;
+    box-shadow: 5px 4px 4px  rgb(78, 120, 235);
+}
+.filmBtn button{
+    border-radius:10%;
+    box-shadow:3px 3px #777;
+}
+.midlineFilm::after{
+    content:'';
+    border-bottom:1px solid rgb(49, 179, 92);
+    width:20px;
+    display: block;
+    margin:5px auto;
+}
+
 
 @media only screen and (max-width:1024px){
     .homeBanner{
         height: auto;
+    }
+}
+@media only screen and (max-width:768px){
+    .wedFilm{
+        height:40vh;
     }
 }

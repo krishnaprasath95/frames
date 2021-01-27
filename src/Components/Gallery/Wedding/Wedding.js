@@ -31,6 +31,7 @@ const Wedding = () => {
         </section>
         <section className="text-center mt-5 mb-4 p-2">
             <h3 className="mt-3">Bridal photography</h3>
+            <p className=" p-2">elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus. In lectus mi, eleifend quis hendrerit eu, vulputate nec ligula.</p>
         <Bride/>
         </section>
         </SimpleReactLightbox>

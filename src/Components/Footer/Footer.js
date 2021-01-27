@@ -1,15 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Jumbotron,Row,Col} from 'react-bootstrap';
+import {Row,Col} from 'react-bootstrap';
 import './Footer.css';
 const Footer = () => {
     return (
         <>
         <footer className="mt-4 mainFooter  text-center  text-white">
-            <div className="footer-logo text-center mt-3 mb-4">
+            <div className="footer-logo text-center mt-3 mb-3">
                 <h5>Frames 'N' Tales Photography</h5>
             </div>
-            <Row>
+            <div className="g-ytsubscribe " data-channelid="UCcjy3SkaVIj75JW1E8fAUsQ"
+             data-layout="full" data-count="default">
+             </div>
+            <Row className="mt-3" >
                 <Col className="" xs={12} sm={6} md={3} lg={3}>
                 <h5>Main-Office</h5>
                 
@@ -58,6 +61,7 @@ const Footer = () => {
                 </ul>
                 </Col>
             </Row>
+           
             <div className="text-center mt-2 mb-1">
                 <p>&copy;{new Date().getFullYear()} Frames'N' Tales Photography</p>
             </div>

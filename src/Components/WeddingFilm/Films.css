@@ -31,10 +31,11 @@
 }
 
 .modal-content{
-    background: rgba( 17, 17, 17, 0.25 );
+    background: rgba( 255, 255, 255, 0.25 );
+
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;;
+    border-radius: 10px;
     color:rgb(202, 203, 204);
 }
 
@@ -63,4 +64,8 @@
   height: 100%;
   border:1px solid rgb(5, 5, 5);
 
+}
+
+.filmCol{
+    padding-bottom: 3rem;
 }

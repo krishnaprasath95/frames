@@ -7,7 +7,7 @@ const Testimony = () => {
     return (
         <div>
           <header className="mt-5 mb-4">
-           <h3>What our Client's Say!</h3>
+           <h2 className="midlineClient">What our Client's Say!</h2>
           </header>
         <Container className="mt-4 ">
         <Carousel id="testimonySlide">

@@ -1,3 +1,10 @@
+.midline::after{
+    content:'';
+    border-bottom:1px solid rgb(49, 179, 92);
+    width:20px;
+    display: block;
+    margin:5px auto;
+}
 .homeCardGroup{
     padding:5px;
 }

@@ -9,22 +9,26 @@
 
 .contactBanner h3{
     padding-top: 20vh;
+ 
 }
 
 .contactContent{
     padding:3rem;
-
+    background:rgb(160, 158, 158);
 }
 
-.address-bar{
-    background-color: rgb(102, 102, 101);
-    padding:2.5rem;
-    border-radius: 30px 10px;
-    box-shadow: 10px -10px 10px rgb(161, 161, 161)
-    
+ .address-bar{
+    background: rgba(214, 153, 55, 0);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.0px );
+    -webkit-backdrop-filter: blur( 2.0px );
+    border-radius: 10px;
+    padding:2rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
 .address-body{
-    color:white;
+    color:rgb(70, 69, 69);
     font-size: 1rem;
 }
 
@@ -32,7 +36,15 @@
     font-size:2rem;
     color:rgb(49, 130, 236);
     padding:5px;
-    background: whitesmoke;
-    border:1px #fff;
+    background: rgb(32, 32, 32);
+    border:1px rgb(59, 58, 58);
     border-radius: 40%;
+}
+
+.midlineFaq::after{
+    content:'';
+    border-bottom:1px solid rgb(49, 179, 92);
+    width:20px;
+    display: block;
+    margin:5px auto;
 }

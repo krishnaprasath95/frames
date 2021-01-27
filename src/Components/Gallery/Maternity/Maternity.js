@@ -7,7 +7,7 @@ import MaternityGallery from './MaternityGallery/MaternityGallery';
 import JustifiedGrid from 'react-justified-grid';
 import './Maternity.css';
 
-const options ={
+const optionsMaternity ={
     buttons:{
         showDownloadButton:false
     }
@@ -28,7 +28,7 @@ const Maternity = () => {
         </Jumbotron>
         </div>
         <div className="mt-5 mb-4">
-            <SRLWrapper options={options}>
+            <SRLWrapper options={optionsMaternity}>
         <JustifiedGrid 
             gutter={5}
             images={MaternityData}

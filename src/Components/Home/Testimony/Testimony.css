@@ -1,3 +1,11 @@
+.midlineClient::after{
+    content:'';
+    border-bottom:1px solid rgb(49, 179, 92);
+    width:20px;
+    display: block;
+    margin:5px auto;
+}
+
 #testimonySlide {
     background: linear-gradient(112deg, rgb(180, 180, 180) 50%, rgb(1, 255, 158) 50%);
     max-width: 900px;

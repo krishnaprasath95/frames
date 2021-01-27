@@ -10,6 +10,7 @@ import Contact from './Components/Contact/Contact';
 import WeddingFilm from './Components/WeddingFilm/WeddingFilm';
 import Sidebar from './Components/Navigator/Sidebar';
 import Footer from './Components/Footer/Footer';
+import Whatsappbtn from './Components/Buttons/WhatsappBtn/Whatsappbtn';
 import './App.css';
 
 
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
     <Sidebar/>
+    <Whatsappbtn style={{marginTop:"16px"}}/>
     <div className="main">
     <Switch location={location} >
       <Route exact path="/" component={Home} />

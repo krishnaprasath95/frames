@@ -1,7 +1,7 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {Container,Row,Col} from 'react-bootstrap'
-
+import {Link} from 'react-router-dom';
 import {Carousel} from 'react-responsive-carousel';
 import hA from '../../assets/1h.jpg';
 import hB from '../../assets/2h.jpg';
@@ -28,7 +28,7 @@ const Home = () => {
                 <img src={hC} alt=""/>
             </div>
         </Carousel>
-        <div className="homeContent ">
+        <div className="homeContent mt-5 mb-4">
         <Container>
             <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -44,6 +44,18 @@ const Home = () => {
         <div className="text-center">
         <GalleryCard/>
         </div>
+        <h2 className="midlineFilm mt-5 mb-2 text-center">Films</h2>
+        <div className="text-center mt-5 mb-4 pl-3 pr-3 wedFilm">
+        <iframe frameBorder="0" height="100%" width="100%" title="Abi+Gomathi wedding"
+        src="https://youtube.com/embed/HsEzRVWlzfc?autoplay=1&loop=1&controls=1&showinfo=0&autohide=1" allowFullScreen>
+      </iframe>
+        </div>
+        <div className="text-center filmBtn">
+        <Link to="/weddingfilm">
+        <button className="btn btn-md btn-outline-dark  ">Watch More</button>
+      </Link>
+        </div>
+  
         <div className="text-center mt-5 mb-4">
            <Testimony/>
         </div>

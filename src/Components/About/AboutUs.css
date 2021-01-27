@@ -14,6 +14,11 @@
     justify-content: center;
     padding-top: 2vh;
 }
+.aboutHead span{
+    background: red;
+    padding:1px 6px;
+}
+
 .circle{
     position: absolute;
     top:0;
@@ -21,8 +26,16 @@
     width:100%;
     height:100%;
     background: aqua;
-    clip-path: circle(400px at left 300px);
+    clip-path: circle(60% at left 20%);
     z-index:-1;
+}
+
+.midlineAbout::after{
+    content:'';
+    border-bottom:1px solid rgb(49, 179, 92);
+    width:20px;
+    display: block;
+    margin:5px auto;
 }
 
 .aboutSvg{

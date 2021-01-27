@@ -7,7 +7,7 @@ import BabyGallery from './BabyGallery/BabyGallery';
 import JustifiedGrid from 'react-justified-grid';
 import './Baby.css';
 
-const options ={
+const optionsBaby = {
     buttons:{
         showDownloadButton:false
     }
@@ -28,7 +28,7 @@ const Baby = () => {
         </Jumbotron>
         </div>
         <div className="mt-5 mb-4">
-            <SRLWrapper option={options}>
+            <SRLWrapper options={optionsBaby}>
         <JustifiedGrid 
             gutter={5}
             images={BabyData}

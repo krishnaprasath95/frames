@@ -7,7 +7,7 @@ import WedGallery from './WedGallery/WedGallery'
 
 
 
-const options ={
+const optionsWed ={
     buttons:{
         showDownloadButton:false
     }
@@ -17,7 +17,7 @@ const Wed = () => {
     return (
         <div>
             <Container>
-                <SRLWrapper options={options}>
+                <SRLWrapper options={optionsWed}>
         <JustifiedGrid 
             gutter={5}
             images={WedData}

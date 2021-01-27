@@ -7,7 +7,7 @@ const GalleryCard = () => {
     return (
         <div>
             <div className="text-center">
-                <h2 className="mt-4 " >Our Gallery</h2>
+                <h2 className="mt-4 midline">Our Gallery</h2>
             </div>
             <CardGroup className="homeCardGroup">
         <Card className="cardHome" >

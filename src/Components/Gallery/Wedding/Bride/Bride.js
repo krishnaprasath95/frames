@@ -1,28 +1,34 @@
 import React from 'react';
-import {Container,Row,Col} from 'react-bootstrap';
-import BP1 from '../../../../assets/2h.jpg';
-import BP2 from '../../../../assets/2h.jpg';
-import './Bride.css';
+import JustifiedGrid from 'react-justified-grid';
+import {SRLWrapper} from 'simple-react-lightbox';
+import BrideGallery from './BrideGallery/BrideGallery';
+import {Container} from 'react-bootstrap';
+import {BrideData} from './BrideData'; 
+
+
+const optionsBride ={
+    buttons:{
+        showDownloadButton:false
+    }
+}
 
 const Bride = () => {
+   
     return (
-      <>
-      <Container className="mt-5 mb-4 ">
-          <Row className="mt-2">
-              <Col xs={12} sm={12} md={4} lg={4}>
-              <img src={BP1} alt=".." className="bride-section" />    
-              </Col>
-              <Col xs={12} sm={12} md={4} lg={4}>
-                <p>elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus.</p>
-                <p>elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus.</p>
-              </Col>
-              <Col xs={12} sm={12} md={4} lg={4}>
-                <img src={BP2} alt=".." className="bride-section" />
-              </Col>
-          </Row>
-      </Container>
-      </>  
-    );
+        <div>
+            <Container>
+        <SRLWrapper options={optionsBride}>
+        <JustifiedGrid
+            gutter={5}
+            images={BrideData}
+            maxRowHeight={200}
+            rows={undefined}
+        />        
+        </SRLWrapper>
+        </Container>
+        <BrideGallery/>
+        </div>
+    )
 }
 
 export default Bride;
