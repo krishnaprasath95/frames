@@ -1,14 +1,19 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {Container,Row,Col} from 'react-bootstrap';
 import aA from '../../assets/2h.jpg';
 import AboutTeam from './Aboutteam.svg';
 import Team from './Team/Team';
 import Vision from './Vision/Vision';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './AboutUs.css';
 
 
 
 const About = () => {
+    useEffect(()=>{
+        AOS.init({duration:1500});
+    },[]);
     return (
         <>
           
@@ -21,7 +26,7 @@ const About = () => {
                     <img src={AboutTeam} alt=".."/>
                 </div>
             </div>
-            <div className="aboutContent mt-5 mb-4 ">
+            <div data-aos="fade-up" className="aboutContent mt-5 mb-4 ">
             <Container>
             <Row className="mt-4 text-center">
                 <Col xs={12} sm={12} md={6} lg={6}>
@@ -34,11 +39,11 @@ const About = () => {
                 </Col>
             </Row>
             </Container>
-            <div className="mt-5">
+            <div data-aos="fade-up" className="mt-5">
                 <h2 className="text-center midlineAbout pt-4">Vision and Mission</h2>
                 <Vision/>
             </div>
-            <section className="mt-5 mb-4 text-center">
+            <section data-aos="fade-up" className="mt-5 mb-4 text-center">
                 <h2 className="midlineAbout">Our Team</h2>
                 <Team/>
             </section>

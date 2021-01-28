@@ -1,14 +1,19 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {Jumbotron} from 'react-bootstrap';
 import Wed from './Wed/Wed';
 import PreWed from './PreWed/PreWed';
 import Bride from './Bride/Bride';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import SimpleReactLightbox from 'simple-react-lightbox';
 import './Wedding.css';
 
 
 
 const Wedding = () => {
+    useEffect(()=>{
+        AOS.init({duration:1500});
+    },[]);
     return (
         <>
         <SimpleReactLightbox>
@@ -19,17 +24,17 @@ const Wedding = () => {
             <p> quam et consequat interdum, elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus. In lectus mi, eleifend quis hendrerit eu, vulputate nec ligula.</p>
             <p> quam et consequat interdum, elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus. In lectus mi, eleifend quis hendrerit eu, vulputate nec ligula.</p>
         </Jumbotron>
-        <section className="text-center mt-5 mb-4">
+        <section data-aos="fade-up" className="text-center mt-5 mb-4">
             <h3 className="mt-3">Wedding</h3>
             <p className=" p-2">elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus. In lectus mi, eleifend quis hendrerit eu, vulputate nec ligula.</p>
         <Wed/>
         </section>
-        <section className="text-center mt-5 mb-4">
+        <section data-aos="fade-up" className="text-center mt-5 mb-4">
             <h3 className="mt-3">Pre and Post Wedding</h3>
             <p className=" p-2">elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus. In lectus mi, eleifend quis hendrerit eu, vulputate nec ligula.</p>
         <PreWed/>
         </section>
-        <section className="text-center mt-5 mb-4 p-2">
+        <section data-aos="fade-up" className="text-center mt-5 mb-4 p-2">
             <h3 className="mt-3">Bridal photography</h3>
             <p className=" p-2">elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus. In lectus mi, eleifend quis hendrerit eu, vulputate nec ligula.</p>
         <Bride/>

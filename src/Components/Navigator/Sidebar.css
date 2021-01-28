@@ -60,7 +60,7 @@ body{
 .barNav .burgerOpen{
     position: absolute;
     top:25px;
-    left:40px;
+    left:25px;
     width:40px;
     z-index:10;
     padding:2px;
