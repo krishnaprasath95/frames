@@ -11,6 +11,7 @@ import WeddingFilm from './Components/WeddingFilm/WeddingFilm';
 import Sidebar from './Components/Navigator/Sidebar';
 import Footer from './Components/Footer/Footer';
 import Whatsappbtn from './Components/Buttons/WhatsappBtn/Whatsappbtn';
+import BtoT from './Components/Buttons/BtoT';
 import './App.css';
 
 
@@ -37,6 +38,7 @@ function App() {
       <Redirect to="/" />
     </Switch>
     </div>
+    <BtoT/>
     <Footer/>
     </>
   );

@@ -3,8 +3,13 @@
 	width: 80px;
 	height: 100%;
 	margin: 0 auto 0;
+	opacity:0.8;
 	
 }
+.whatsappBtn:hover{
+	opacity: 1;
+}
+
 .WhatsappBtnIcon{
 	position: fixed;
 	top: 90%;

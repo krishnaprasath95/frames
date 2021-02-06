@@ -8,7 +8,8 @@ import {Carousel} from 'react-responsive-carousel';
 import hA from '../../assets/1h.jpg';
 import hB from '../../assets/2h.jpg';
 import hC from '../../assets/3h.jpg';
-
+import hD from '../../assets/hD.jpg';
+import hE from '../../assets/hE.jpg';
 import GalleryCard from './GalleryCard/GalleryCard';
 
 import Testimony from './Testimony/Testimony';
@@ -30,6 +31,12 @@ const Home = () => {
             </div>
             <div className="homeBanner">
                 <img src={hC} alt=""/>
+            </div>
+            <div className="homeBanner">
+                <img src={hD} alt=""/>
+            </div>
+            <div className="homeBanner">
+                <img src={hE} alt=""/>
             </div>
         </Carousel>
         <div className="homeContent mt-5 mb-4">

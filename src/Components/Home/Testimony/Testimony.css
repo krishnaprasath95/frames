@@ -8,7 +8,8 @@
 
 #testimonySlide {
     background: linear-gradient(112deg, rgb(180, 180, 180) 50%, rgb(1, 255, 158) 50%);
-    max-width: 900px;
+    width:100%;
+    max-width: 100%;
     
 }
 .testimony-item{
