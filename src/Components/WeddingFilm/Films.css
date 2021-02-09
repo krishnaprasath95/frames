@@ -32,18 +32,18 @@
 
 .modal-content{
     background: rgba( 255, 255, 255, 0.25 );
-
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     color:rgb(202, 203, 204);
+    width:100vw;
 }
 
 .modal-body{
     display: flex;
     align-items: center;
     justify-content: center;
-     
+    width: auto;
 }
 .close{
     color:#fff;
@@ -51,6 +51,7 @@
 .videoFrame{
     position: relative;
     width:100%;
+    
     padding-top: 56.25%;
     overflow: hidden;
 }

@@ -5,11 +5,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {Link} from 'react-router-dom';
 import {Carousel} from 'react-responsive-carousel';
-import hA from '../../assets/1h.jpg';
-import hB from '../../assets/2h.jpg';
-import hC from '../../assets/3h.jpg';
-import hD from '../../assets/hD.jpg';
-import hE from '../../assets/hE.jpg';
+import hA from '../../assets/Home/homeBanner/hA.jpg';
+import hB from '../../assets/Home/homeBanner/hB.jpg';
+import hC from '../../assets/Home/homeBanner/hC.jpg';
 import GalleryCard from './GalleryCard/GalleryCard';
 
 import Testimony from './Testimony/Testimony';
@@ -22,7 +20,7 @@ const Home = () => {
     },[]);
     return (
         <>
-        <Carousel autoPlay style={{width:"100%"}}>    
+        <Carousel autoPlay showThumbs={false} style={{width:"100%"}}>    
             <div className="homeBanner">
                 <img src={hA} alt=""/>
             </div>
@@ -31,12 +29,6 @@ const Home = () => {
             </div>
             <div className="homeBanner">
                 <img src={hC} alt=""/>
-            </div>
-            <div className="homeBanner">
-                <img src={hD} alt=""/>
-            </div>
-            <div className="homeBanner">
-                <img src={hE} alt=""/>
             </div>
         </Carousel>
         <div className="homeContent mt-5 mb-4">

@@ -26,7 +26,7 @@ const Films = (props) => {
                 <Modal.Body>
                     <div className="videoFrame">
                     <iframe  title="title"
-                     src={props.src}
+                     src={props.src} allowFullScreen
                     />
                     </div>
                 </Modal.Body>

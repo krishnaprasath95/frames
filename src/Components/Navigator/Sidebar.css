@@ -11,7 +11,7 @@ body{
     top:0;
     left:0;
     height:80px;
-    background:rgb(92, 142, 185);
+    background:#d2d3d9;
     z-index:99;
     transition:0.3s ease ;
 }
@@ -65,7 +65,7 @@ body{
     z-index:10;
     padding:2px;
     font-size:2rem;
-    color:rgb(37, 36, 36);
+    color:#a6806a;
     transition: 0.2s ease;
 }
 .barNav .burgerOpen:hover{
