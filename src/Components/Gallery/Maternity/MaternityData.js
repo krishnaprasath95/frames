@@ -1,7 +1,7 @@
 import M1 from '../../../assets/3h.jpg';
 import M2 from '../../../assets/3h.jpg';
 import M3 from '../../../assets/3h.jpg';
-import M4 from '../../../assets/3h.jpg';
+import M4 from '../../../assets/hE.jpg';
 
 export const MaternityData = [
     {

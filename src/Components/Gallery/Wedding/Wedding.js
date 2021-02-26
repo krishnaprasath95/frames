@@ -1,8 +1,8 @@
 import React,{useEffect} from 'react';
 import {Jumbotron} from 'react-bootstrap';
 import Wed from './Wed/Wed';
-import PreWed from './PreWed/PreWed';
-import Bride from './Bride/Bride';
+/* import PreWed from './PreWed/PreWed';
+import Bride from './Bride/Bride'; */
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SimpleReactLightbox from 'simple-react-lightbox';
@@ -29,7 +29,7 @@ const Wedding = () => {
             <p className=" p-2">elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus. In lectus mi, eleifend quis hendrerit eu, vulputate nec ligula.</p>
         <Wed/>
         </section>
-        <section data-aos="fade-up" className="text-center mt-5 mb-4">
+{/*         <section data-aos="fade-up" className="text-center mt-5 mb-4">
             <h3 className="mt-3">Pre and Post Wedding</h3>
             <p className=" p-2">elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus. In lectus mi, eleifend quis hendrerit eu, vulputate nec ligula.</p>
         <PreWed/>
@@ -39,7 +39,7 @@ const Wedding = () => {
             <p className=" p-2">elit justo maximus diam, quis elementum nulla sapien et lectus. Phasellus lobortis urna sit amet tellus placerat hendrerit. Sed efficitur non est at rhoncus. In lectus mi, eleifend quis hendrerit eu, vulputate nec ligula.</p>
         <Bride/>
         </section>
-        </SimpleReactLightbox>
+ */}        </SimpleReactLightbox>
         </>
     )
 }

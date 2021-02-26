@@ -49,11 +49,24 @@ const Home = () => {
         </div>
         
         <h2 data-aos="fade-up" className="midlineFilm mt-5 mb-2 text-center">Films</h2>
-        <div data-aos="fade-up" className="text-center mt-5 mb-4 pl-3 pr-3 wedFilm">
+        <Container>
+        <Row>
+        <Col xs={12} sm={12} md={6} lg={6}> 
+        <div data-aos="fade-up" className="text-center mt-5 mb-4 pl-3 pr-3 wedFilm">    
         <iframe frameBorder="0" height="100%" width="100%" title="Abi+Gomathi wedding"
-        src="https://youtube.com/embed/HsEzRVWlzfc?autoplay=1&loop=1&controls=1&showinfo=0&autohide=1" allowFullScreen>
+        src="https://youtube.com/embed/HsEzRVWlzfc?autoplay=0&loop=1&controls=1&showinfo=0&autohide=1" allowFullScreen>
       </iframe>
         </div>
+        </Col>
+        <Col xs={12} sm={12} md={6} lg={6}> 
+        <div data-aos="fade-up" className="text-center mt-5 mb-4 pl-3 pr-3 wedFilm">    
+        <iframe frameBorder="0" height="100%" width="100%" title="Abi+Gomathi wedding"
+        src="https://youtube.com/embed/HsEzRVWlzfc?autoplay=0&loop=1&controls=1&showinfo=0&autohide=1" allowFullScreen>
+      </iframe>
+        </div>
+        </Col>
+        </Row>
+        </Container>
         <div  className="text-center filmBtn">
         <Link to="/weddingfilm">
         <button className="btn btn-md btn-outline-dark  ">Watch More</button>

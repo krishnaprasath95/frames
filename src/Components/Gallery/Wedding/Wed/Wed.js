@@ -3,17 +3,19 @@ import JustifiedGrid from 'react-justified-grid';
 import {Container} from 'react-bootstrap';
 import {SRLWrapper} from 'simple-react-lightbox';
 import {WedData} from './WedData'; 
-import WedGallery from './WedGallery/WedGallery'
 
 
 
 const optionsWed ={
+    showThumbnails:false,
     buttons:{
         showDownloadButton:false
+        
     }
 }
 
 const Wed = () => {
+/*     const [toggler, setToggler] = React.useState(false); */
     return (
         <div>
             <Container>
@@ -21,13 +23,23 @@ const Wed = () => {
         <JustifiedGrid 
             gutter={5}
             images={WedData}
-            maxRowHeight={200}
+            maxRowHeight={400}
             rows={undefined}
             
         />
         </SRLWrapper>
+       {/*  <button onClick={() => setToggler(!toggler)}>
+        Toggle Lightbox
+        </button>
+        <FsLightbox
+        toggler={toggler}
+        sources={[
+            '../../../../assets/Wed/wedL.jpg',
+            '../../../../assets/Wed/wedM.jpg'
+        ]}
+        /> */}
         </Container>
-        <WedGallery/>
+      
         </div>
     )
 }
