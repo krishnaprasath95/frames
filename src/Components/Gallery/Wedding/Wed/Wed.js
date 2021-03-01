@@ -1,43 +1,38 @@
 import React from 'react';
-import JustifiedGrid from 'react-justified-grid';
 import {Container} from 'react-bootstrap';
-import {SRLWrapper} from 'simple-react-lightbox';
 import {WedData} from './WedData'; 
+import 'photoswipe/dist/photoswipe.css';
+import 'photoswipe/dist/default-skin/default-skin.css';
 
+import { Gallery, Item } from 'react-photoswipe-gallery';
+import './Wed.css';
 
-
-const optionsWed ={
-    showThumbnails:false,
-    buttons:{
-        showDownloadButton:false
-        
-    }
-}
 
 const Wed = () => {
-/*     const [toggler, setToggler] = React.useState(false); */
+
     return (
         <div>
-            <Container>
-                <SRLWrapper options={optionsWed}>
-        <JustifiedGrid 
-            gutter={5}
-            images={WedData}
-            maxRowHeight={400}
-            rows={undefined}
-            
-        />
-        </SRLWrapper>
-       {/*  <button onClick={() => setToggler(!toggler)}>
-        Toggle Lightbox
-        </button>
-        <FsLightbox
-        toggler={toggler}
-        sources={[
-            '../../../../assets/Wed/wedL.jpg',
-            '../../../../assets/Wed/wedM.jpg'
-        ]}
-        /> */}
+        <Container>
+        <div className="wedding-portfolio" >
+        <Gallery options={{shareButtons:false}}>
+    
+    {WedData.map((item,index)=>(
+    <div className="wedding-wrap" key={index}>
+    <Item 
+      original={item.origin}
+      thumbnail={item.thumb}
+      width={item.width}
+      height={item.height}
+    >
+       
+      {({ ref, open }) => (
+      <img  src={item.origin}   ref={ref} onClick={open} alt=""  />
+      )}
+      </Item>
+      </div>
+    ))}
+  </Gallery>
+  </div>
         </Container>
       
         </div>

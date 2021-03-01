@@ -1,0 +1,25 @@
+.wedding-portfolio{
+  transition: all .5s ease-in-out;
+  column-gap: 30px;
+  column-fill: initial;
+  width: 100%;
+}
+.wedding-portfolio .wedding-wrap{
+  margin-bottom: 30px;
+  display: inline-block; /* Fix the misalignment of items */
+  vertical-align: top;
+}
+.wedding-wrap img{
+  width:100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wedding-portfolio {
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width:1024px){
+  .wedding-portfolio{
+    column-count: 3;
+  }
+}
